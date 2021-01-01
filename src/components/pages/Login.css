@@ -1,0 +1,120 @@
+/* * Login Component start*/
+.login-container {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	background-color: #525252;
+}
+
+.login-container > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 40rem;
+	width: 30rem;
+
+	/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+	box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+	background-color: #fff;
+}
+
+.login-inner-container > button {
+	width: 12rem;
+}
+
+/* TODO Form action inside Form */
+.login-inner-container {
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+/* TODO Form Footer */
+/* .Form-Footer {
+	display: flex;
+	height: 20vh;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #3e4044;
+	color: #fff;
+} */
+
+/* * Login Component end*/
+
+.login-container.register-container {
+	height: 100vh;
+}
+.login-container.register-container > div {
+	height: 45rem;
+	/* width: 30rem; */
+}
+
+.register-inner-container {
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.register-inner-container > button {
+	width: 20rem;
+}
+/* Text Fields */
+.sdsd {
+	width: 90%;
+}
+
+@media only screen and (max-width: 600px) {
+	.login-container {
+		height: 600px;
+	}
+
+	.login-container > div {
+		height: 100%;
+		width: 100%;
+	}
+
+	.login-inner-container {
+		height: 60%;
+		width: 90%;
+	}
+	.login-inner-container > button {
+		width: 90%;
+	}
+
+	/* !Register */
+	.login-container.register-container {
+		height: max-content;
+	}
+
+	.login-container.register-container div > h1 {
+		padding: 2rem;
+	}
+
+	.register-inner-container {
+		height: 100%;
+		width: 90%;
+		text-align: center;
+	}
+
+	.sdsd {
+		width: 80%;
+	}
+
+	.register-inner-container > button {
+		margin: 1rem 0;
+		width: 90%;
+	}
+
+	.register-inner-container > a {
+		margin: 2rem 0;
+	}
+}

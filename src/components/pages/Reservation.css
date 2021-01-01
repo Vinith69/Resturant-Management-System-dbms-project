@@ -1,0 +1,213 @@
+/* .Reservation {
+	background-color: gray;
+	height: 100vh;
+} */
+
+.reservation-section {
+	font-family: "Josefin Sans", sans-serif;
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	background: url(https://preview.colorlib.com/theme/allfood/assets/img/gallery/section_bg04.png)
+		no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 40px 0 90px 0;
+	line-height: 1.5;
+}
+
+.reservation-section .reservation-titles {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.reservation-section .reservation-titles span {
+	font-size: 1rem;
+	color: #ff5600;
+	margin-bottom: 0.5rem;
+}
+
+.reservation-section .reservation-titles h2 {
+	font-size: 3.1rem;
+}
+
+.reservation-form {
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+	padding: 4rem 3rem;
+	border-radius: 0.8rem;
+}
+
+.reservation-form .date,
+.reservation-form select,
+.reservation-form .time,
+.reservation-form .btn {
+	width: max-content;
+	height: 5rem;
+	font-size: 1.2rem;
+
+	/* font-size: 0.9rem; */
+	background-color: #f9f9f9;
+	border: none;
+	outline: none;
+	margin: 0 1rem;
+}
+
+.reservation-form .date {
+	padding: 1rem;
+}
+
+.reservation-form select {
+	font-family: "FontAwesome", "Second Font name";
+	padding: 0 1rem;
+}
+
+.reservation-form .time {
+	padding: 0 3.4rem;
+}
+
+.reservation-form .btn {
+	width: 12rem;
+	cursor: pointer;
+}
+.bg {
+	background-color: greenyellow;
+}
+
+/* !Sefvicee */
+.Reservation .home-service-section {
+	height: max-content;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 8rem 0;
+}
+
+.Reservation .home-service-section div p,
+.Reservation .home-service-section div h2 {
+	text-align: center;
+}
+
+.Reservation .home-service-section > div {
+	height: max-content;
+}
+
+.Reservation .home-service-section > div p {
+	color: #ff5600;
+	font-size: 1.3rem;
+	margin-bottom: 0.8rem;
+	font-weight: 500;
+}
+
+.Reservation .home-service-section > div h2 {
+	font-size: 3.1rem;
+	line-height: 1.3;
+	font-weight: 600;
+	margin-bottom: 4rem;
+}
+
+.Reservation .home-service-section section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* Div */
+.Reservation .home-service-section .home-service-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* flex: 0 0 20%; */
+	width: 300px;
+	text-align: center;
+	line-height: 1.5;
+	margin: 1rem;
+	box-shadow: 0px 10px 30px 0px rgba(133, 66, 189, 0.1);
+	padding: 4rem 0;
+	cursor: pointer;
+}
+
+.home-service-section .home-service-container p,
+.home-service-section .home-service-container h2,
+.home-service-section .home-service-container img {
+	margin: 0.8rem;
+}
+
+.Reservation .home-service-section .home-service-container.no-shadow {
+	box-shadow: none;
+}
+
+.Reservation .home-service-section .home-service-container.no-shadow:hover {
+	box-shadow: 0px 10px 30px 0px rgba(133, 66, 189, 0.1);
+}
+
+/* ! Media Query */
+
+@media only screen and (min-width: 600px) and (max-width: 1400px) {
+	.Reservation .home-service-section section {
+		flex-wrap: wrap-reverse;
+	}
+	.Reservation .home-service-section .home-service-container.no-shadow {
+		box-shadow: 0px 10px 30px 0px rgba(133, 66, 189, 0.1);
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+	.Reservation .reservation-section {
+		height: max-content;
+	}
+
+	.reservation-form {
+		width: 80%;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.reservation-form .date,
+	.reservation-form select,
+	.reservation-form .time,
+	.reservation-form .btn {
+		margin: 1rem 0.5rem;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.Reservation .reservation-section {
+		height: max-content;
+	}
+	.reservation-form {
+		width: 300px;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.reservation-form .date,
+	.reservation-form select,
+	.reservation-form .time,
+	.reservation-form .btn {
+		margin: 1rem 0.5rem;
+		padding: 0.3rem;
+		width: 100%;
+	}
+
+	/* !Service */
+	.Reservation .home-service-section section {
+		flex-direction: column;
+		width: fit-content;
+	}
+
+	.Reservation .home-service-section > div h2 {
+		margin-bottom: 4rem;
+	}
+
+	.Reservation .home-service-section .home-service-container.no-shadow {
+		box-shadow: 0px 10px 30px 0px rgba(133, 66, 189, 0.2);
+	}
+}
